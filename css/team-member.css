@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500&display=swap');
+
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* PART1 */
+
+.part1{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    color: white;
+    font-family: 'Courgette', cursive;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/team/team.jpg') right;
+    background-size: cover;
+}
+
+.part1 h1{
+    font-size: 60px;
+}
+.part1 h2{
+    font-size: 50px;
+
+}
+
+.assombrissement{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.z-index{
+    z-index: 3;
+    position: relative;
+}
+
+.part2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.bio{
+    padding-left: 10%;
+    width: 65%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 20px; */
+}
+
+.bio div{
+    align-items: flex-end;
+}
+
+.bio div img{
+    align-self: center;
+    width: 30%;
+    border-radius: 1000px;
+}
+
+@media(min-width: 1190px){
+    .bio p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 992px){
+    .bio{
+        width: 100%;
+        padding-left: 0;
+
+    }
+    .bio div img{
+        align-self: center;
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width: 530px){
+    .part2{
+        height: 140vh;
+    }
+
+    .bio div img{
+        align-self: center;
+        width: 200px;
+        height: 200px;
+    }
+}

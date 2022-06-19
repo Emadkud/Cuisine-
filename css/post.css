@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2? famille=Oswald:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+header {
+  z-index: 4;
+  border-bottom: rgb(224, 221, 221) solid 1px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  background: transparent;
+  position: absolute;
+  top: 0%;
+}
+
+.burger {
+  position: absolute;
+  width: 60px;
+  height: 35px;
+  top: 3%;
+  right: 2%;
+  flex-direction: column;
+  display: none;
+  justify-content: space-around;
+}
+
+.burger div {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(159, 145, 145);
+}
+
+header h3 {
+  font-family: "Courgette", cursive;
+  font-size: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: rgba(249, 233, 233, 0.38);
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: white;
+}
+
+.bg-opacity {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  margin-left: -26px;
+}
+
+/* part-1 */
+.part-1 {
+  background-image: url("../img/articles/suzette/suzette-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.part-1 h1 {
+  border: 1px solid black;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  padding: 30px;
+  font-size: 40px;
+}
+
+.part-2 h1 {
+  font-family: "Courgette", cursive;
+  font-size: 29px;
+  font-weight: 700;
+}
+.part-2 p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.lam {
+  color: rgb(104, 106, 106);
+  font-size: 130px;
+  font-weight: 600;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.part-2 .lam p {
+  margin-top: 60px;
+}
+
+.part-2 {
+  border-bottom: rgb(224, 221, 221) solid 1px;
+}
+.aside-part-2 {
+  width: 70%;
+}
+
+/* part-3 */
+
+.part-3 img {
+  width: 250px;
+  border-radius: 200px;
+  margin-top: 50px;
+}
+.part-3 h1 {
+  font-family: "Courgette", cursive;
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.part-3 {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.part-3 article {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.part-3 .auteur {
+  width: 45%;
+  margin-left: 30px;
+}
+
+.part-3 {
+  border-bottom: rgb(224, 221, 221) solid 1px;
+}
+
+/* part-4 */
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.lable {
+  text-align: start;
+  font-family: "Courgette", cursive;
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 20%;
+}
+.input {
+  width: 20%;
+  padding: 10px;
+}
+
+/* part-5 */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.part-5 {
+  width: 60%;
+  padding-top: 40px;
+}
+
+.part-5 img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+.part-5 .dam {
+  display: flex;
+}
+
+.part-5 article {
+  margin-bottom: 30px;
+  display: flex;
+  
+}
+
+.part-5.title {
+  text-align: center;
+}
+
+.part-5 h3 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Courgette", cursive;
+}
+
+.part-5 h4 {
+  font-family: "Courgette", cursive;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.container-white {
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 40px;
+  width: 100wh;
+  height: 30vh;
+  background: black;
+  color: white;
+  align-items: center;
+  gap: 200px;
+  padding-left: 7%;
+  font-family: "Oswald", sans-serif;
+}
+
+footer article {
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+footer h4 {
+  font-family: "Courgette", cursive;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+footer li {
+  text-decoration: underline;
+  margin-bottom: 3px;
+}
+
+footer input {
+  font-family: "Oswald", sans-serif;
+}
+
+footer button {
+  height: 100%;
+  border: white 1px solid;
+  color: white;
+  background: #000;
+  font-family: "Oswald", sans-serif;
+  border-radius: 3px;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    width: 100wh;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+    align-items: flex-start;
+  }
+
+  .aside-part-2 {
+    width: 100%;
+    padding:  0 40px;
+  }
+
+  .part-3 img {
+    width: 100px;
+    margin: 0%;
+  }
+
+  .part-3 article {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .part-5 {
+    width: 90%;
+    padding-top: 40px;
+  }
+  
+  .part-5 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .input {
+    width: 60%;
+  }
+  .lable{
+    width: 60%;
+  }
+}

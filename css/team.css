@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* PART 1  */
+
+.part1{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url('../img/team/team.jpg') right;
+    background-size: cover;
+    color: white;
+    font-family: 'Courgette', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assombrissement{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.z-index{
+    z-index: 3;
+}
+
+.part1 h1{
+    font-size: 40px;
+}
+
+.part2{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+}
+.the-team{
+    width: 70%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1FR 1fr;
+}
+.the-team div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+.the-team div img{
+    width: 150px;
+    border-radius: 200px;
+}
+.the-team div h3{
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+}
+.the-team div P{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+@media(max-width: 992px) {
+    .part2{
+        height: 110vh;
+    }
+    .the-team{
+        width: 100%;
+        height: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 768px) {
+    .part2{
+        justify-content: center;
+        height: 200vh;
+    }
+
+    .the-team{
+        width: 80%;
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+
+}

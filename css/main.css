@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500&display=swap');
+
+.flex{
+    display: flex;
+}
+
+
+/* Header */
+
+header {
+    z-index: 4;
+    border-bottom: white solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background: transparent;
+    position: absolute;
+    top: 0%;
+}
+
+.burger{
+    position: absolute;
+    width: 60px;
+    height: 35px;
+    top: 20px;
+    right: 2%;
+    flex-direction: column;
+    display: none;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.burger div{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+header h3{
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.38);
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: white;
+
+}
+footer{
+    margin-top: 40px;
+    width: 100wh;
+    height: 30vh;
+    background: black;
+    color: white;
+    align-items: center;
+    gap: 200px;
+    padding-left: 7%;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+footer article{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer h4{
+    font-family: 'Courgette', cursive;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+footer li{
+    text-decoration: underline;
+    margin-bottom: 3px;
+}
+
+footer input{
+    font-family: 'Oswald', sans-serif;
+}
+
+footer button{
+    height: 100%;
+    border: white 1px solid;
+    color: white;
+    background: #000;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 3px;
+}
+
+.blank{
+    width: 100%;
+    height: 70vh;
+    border: red solid 2px;
+    background: #000;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.inputs{
+    margin-top: 40px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 25%;
+    height: 350px;
+    background: white;
+}
+
+.inputs div{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputs h6{
+    font-family: 'Courgette', cursive;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.inputs figure{
+    display: flex;
+    width: 70%;
+    gap: 4px;
+}
+
+.inputs img{
+    width: 30px;
+}
+
+.inputs button, .inputs input{
+    height: 30px;
+    width: 80%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.inputs button{
+    background: black;
+    color: white;
+}
+
+.icones img{
+    background: white;
+}
+
+
+@media(max-width: 992px){
+    .burger{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+        width: 100wh;
+        height: auto;
+        flex-direction: column;
+        gap: 20PX;
+        padding: 3%;
+        align-items: flex-start;
+    }
+    
+    .inputs{
+        display: none;
+    }
+}
+
